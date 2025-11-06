@@ -6,12 +6,14 @@
   {% if car_list %}
     <table>
       {% for car in car_list %}
-        <li>
-          <a href="{% url 'taxi:car-detail' car.id %}">
-            {{ car.id }}
-          </a>
-        <p>{{ car.model }}</p>
-        </li>
+        <tr>
+          <td>
+            <a href="{% url 'taxi:car-detail' car.id %}">
+              {{ car.id }}
+            </a>
+            {{ car.model }}
+          </td>
+        </tr>
       {% endfor %}
     </table>
   {% else %}
