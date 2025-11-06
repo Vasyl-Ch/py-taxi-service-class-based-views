@@ -4,15 +4,13 @@
   <h1>Manufacturer List</h1>
 
   {% if manufacturer_list %}
-    <ul>
+    <table>
       {% for manufacturer in manufacturer_list %}
         <li>
-          <a>
-            {{ manufacturer.name }}
-          </a>
+          {{ manufacturer.name }}
         </li>
       {% endfor %}
-    </ul>
+    </table>
   {% else %}
     <p>No manufacturers found.</p>
   {% endif %}

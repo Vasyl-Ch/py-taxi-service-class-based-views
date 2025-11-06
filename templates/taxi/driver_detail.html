@@ -9,7 +9,7 @@
   </p>
   <div class="ml-3">
     <h2>Cars</h2>
-    <ul>
+    <table>
       {% for car in driver.cars.all %}
         <li>
           <a href="{% url 'taxi:car-detail' car.id %}">
@@ -17,6 +17,6 @@
           </a>
         </li>
       {% endfor %}
-    </ul>
+    </table>
   </div>
 {% endblock %}

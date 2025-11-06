@@ -11,10 +11,9 @@
     <h2>Drivers</h2>
     {% for driver in car.drivers.all %}
       <hr>
-      <p class="text-muted"></p>
       <p>{{ driver.first_name }} {{ driver.last_name }}
         {% if driver.username %}
-          <string>Username:</string> {{ driver.username }}
+          <strong>Username:</strong> {{ driver.username }}
         {% endif %}
       </p>
     {% endfor %}
